@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Greeting</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f4f6f9;
+        }
+        input {
+            padding: 10px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .greeting {
+            margin-top: 30px;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Interactive Greeting App</h1>
+
+    <form method="POST">
+        <input type="text" name="who" placeholder="Enter your name">
+        <button type="submit">Greet Me</button>
+    </form>
+
+    <div class="greeting">
+        Hello {{ who }}!
+    </div>
+
+</body>
+</html>
+
