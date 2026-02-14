@@ -2,7 +2,7 @@ FROM python:3.7-slim
 
 WORKDIR /app
 
-# Install dependencies
+# Install dependency
 RUN pip install --no-cache-dir Flask gunicorn
 
 # Copy app + templates
